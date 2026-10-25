@@ -1,0 +1,7 @@
+live checkpoint lock pid=4140088
+pid-namespace=pid:[4026531836]
+boot-id=d1e5a89f-069b-4534-b24f-17b48fabe304
+watcher-environment=FM_HOME=/tmp/fm-live-pid.I9KNw3
+checkpoint-exit=124
+checkpoint-output=checkpoint: no actionable wake within 3s 
+checkpoint-error=

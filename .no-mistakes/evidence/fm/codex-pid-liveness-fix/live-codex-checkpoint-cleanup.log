@@ -1,0 +1,6 @@
+checkpoint-exit=124
+watcher-pid=4160046
+lock-after-exit=absent
+namespace-after-exit=absent
+boot-id-after-exit=absent
+output=checkpoint: no actionable wake within 2s 
