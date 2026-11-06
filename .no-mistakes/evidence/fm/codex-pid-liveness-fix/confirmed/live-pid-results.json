@@ -1,0 +1,64 @@
+[
+  {
+    "check": "identity",
+    "head": "3695d70a9e3990b7875e9001a7d4307219a96e01",
+    "codex_version": "codex-cli 0.163.0",
+    "scope": "real Codex workspace-write sandbox and production watcher/checkpoint/guard; NOT native model Stop dispatch"
+  },
+  {
+    "check": "host-published-watcher",
+    "lock": {
+      "fm-home": "/home/ubuntu/.no-mistakes/worktrees/10136bce06cd/01M6QHJDG177QJ4SB557V6WXWQ/.test-pid-tmp/fm-lab-rgwl9oxm",
+      "pid": "367",
+      "pid-identity": "linux-starttime=149431148 cmdline-hex=62617368002f686f6d652f7562756e74752f2e6e6f2d6d697374616b65732f776f726b74726565732f3130313336626365303663642f30314d3651484a4447313737514a3453423535375636575857512f2e746573742d7069642d746d702f666d2d6c61622d7267776c396f786d2f62696e2f666d2d77617463682e736800",
+      "pid-start": "proc-starttime=149431148",
+      "boot-id": "d1e5a89f-069b-4534-b24f-17b48fabe304",
+      "pid-namespace": "pid:[4026532914]",
+      "watcher-path": "/home/ubuntu/.no-mistakes/worktrees/10136bce06cd/01M6QHJDG177QJ4SB557V6WXWQ/.test-pid-tmp/fm-lab-rgwl9oxm/bin/fm-watch.sh"
+    },
+    "host_pid": 184262,
+    "nspids": [
+      "184262",
+      "367"
+    ],
+    "observer_namespace": "pid:[4026531836]",
+    "process_FM_HOME_matches": true,
+    "same_namespace_guard_exit": null,
+    "same_namespace_guard_stderr": null
+  },
+  {
+    "check": "host-strict-rejects-inner-pid",
+    "exit": 1,
+    "stderr": ""
+  },
+  {
+    "check": "host-cross-namespace-stop-allowed",
+    "harness": "codex",
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "check": "host-checkpoint-close",
+    "exit": 124,
+    "stdout": "detected_harness=codex\nlock acquired: harness pid 1\nfm_home_initially=unset\ncheckpoint: no actionable wake within 30s\n",
+    "stderr": "",
+    "queue": "",
+    "host_log": "1793939746\tstart\tgen=host-183-1793939746\tprimary=codex\n1793939776\tboundary\tafter 30s\n"
+  },
+  {
+    "check": "host-after-sandbox-exit-blocks",
+    "harness": "codex",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "\u25cf\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\u25cf  TURN WOULD END BLIND - SUPERVISION IS OFF\n\u25cf  1 task(s) in flight, but no live watcher holds this home lock (last beat: 1s ago).\n\u25cf  repair missing watcher supervision with a foreground checkpoint: bin/fm-watch-checkpoint.sh --seconds 180.\n\u25cf\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n"
+  },
+  {
+    "check": "host-cleanup",
+    "remaining_watch_locks": []
+  },
+  {
+    "check": "host-lab-removed",
+    "absent": true
+  }
+]

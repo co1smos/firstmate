@@ -1,0 +1,17 @@
+[
+  {
+    "check": "identity",
+    "head": "3695d70a9e3990b7875e9001a7d4307219a96e01",
+    "codex_version": "codex-cli 0.163.0",
+    "scope": "real Codex workspace-write sandbox and production watcher/checkpoint/guard; NOT native model Stop dispatch"
+  },
+  {
+    "check": "host-failure",
+    "error": "sandbox readiness timeout",
+    "home": "/home/ubuntu/.no-mistakes/worktrees/10136bce06cd/01M6QHJDG177QJ4SB557V6WXWQ/.test-pid-tmp/fm-lab-cms2bomz"
+  },
+  {
+    "check": "host-lab-removed",
+    "absent": true
+  }
+]
